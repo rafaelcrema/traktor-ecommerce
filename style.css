@@ -1,206 +1,238 @@
 @charset "utf-8";
 /* CSS Document */
 *{
-	margin: 0;
+	margin: 0;																											
 	padding: 0;
 }
 
-body, html{
-	background-color: rgb(218, 218, 218);
-	width: 100%;
-	height: 100%;
+body,html{
+	background-color: rgb(199, 199, 199);
 }
 
-/* Contato */
-.contato-top {
-	font-family: sans-serif;
-	height: 90px;
-	overflow: hidden;
-	background-color: #313131;
-	padding: 20px 10px;
-	background-image: url(IMAGENS/aço-bemgrande.jpg);
-  }
-
-
-  .contato-top a {
-	top: 15px;
-	display: flex;
-	float: left;
-	color: rgb(255, 255, 255);
-	text-align: center;
-	padding: 15px;
-	text-decoration: none;
-	font-size: 22px;
-	line-height: 25px;
-	border-radius: 10px;
-  }
-
-.contatos-left{
-	margin-top: 15px;
-}
-
- .contato-top a .logotop {
-	font-size: 25px;
-	font-weight: bold;
-  }
-
-  .contato-top a:hover {
-	background-color: rgb(134, 133, 133);
-	color: black;
-  }
-
-  .contato-top a.email {
-	display: flex;
-	color: rgb(255, 255, 255);
-  }
-  .contato-top a.email img{
-	top: 100px;
-	margin-right: 7px;
-	max-width: 30px;
-	max-height: 25px;
-  }
-
-  .contato-top a.fone img{
-	top: 100px;
-	margin-right: 7px;
-	max-width: 30px;
-	max-height: 25px;
-  }
-
-  .contato-top a.whats img{
-	top: 100px;
-	margin-right: 7px;
-	max-width: 30px;
-	max-height: 25px;
-  }
-
-
-  .contato-top a.email:hover {
-	color: rgb(0, 0, 0);
-  }
-
-  .contato-top a img{
-	max-width:200px;
-    max-height:150px;
-  }
-  .contatos-left {
-	float: right;
-  }
-/* Style the header with a grey background and some padding */
-.header {
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	box-shadow: 2px 4px 10px rgb(184, 184, 184);
+.header{
 	height: 70px;
-	overflow: hidden;
-	background-image: url(IMAGENS/rodapecima.jpg);
-	text-align: center;
-  }
-  
-  /* Style the header links */
-  .header a {
-	float: right;
+	background-color: #fff;
+}
+
+.header a{
+	float: left;
 	color: black;
 	padding: 21px;
 	text-decoration: none;
-	font-size: 22px;
+	font-size: 20px;
 	line-height: 25px;
 	border-radius: 10px;
-	width: 100px;
-  }
-  
-  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-  .header a.logo {
-	font-size: 25px;
-	font-weight: bold;
-  }
-
-  /* Change the background color on mouse-over */
-  .header a:hover {
-	background-color: #ddd;
-	color: black;
-  }
-  
-  /* Style the active/current link*/
-  .header a.active {
-	color: rgb(0, 0, 0);
-  }
-  
-   /* Style the active/current link*/
-   .header a img{
-	max-width:200px;
-    max-height:150px;
-  }
-
-#cont-text {
-	color: rgb(61, 61, 61);
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-	font-size: 30px;
-	top: 130px;
-	display: flex;
+}
+.logo img{
+	max-width: 170px;
+    margin-left: 185px;
+    margin-top: 10px;
+}
+.redes-sociais{
+	margin-top: -65px;
+	margin-right: 12px;
+	float: right;
+}
+.redes-sociais a{
+	max-width: 30px;
+}
+.redes-sociais a img{
+	max-height: 30px;
 }
 
-.titulo-fa{
-	text-align: center;
-	margin-top: 20px;
-	margin-left: 8px;
+.links a:hover{
+	background-color: rgb(224, 224, 224);
+}
+.redes-sociais a:hover{
+	transform: scale(1.1);
+}
+#detalizin{
+	height: 5px;
+	background-color: rgb(192, 151, 37);
 }
 
-.titulo-loja{
-	text-align: center;
-	margin-top: 20px;
-	margin-left: 100px;
+#imagens img{
+	margin-top: 50px;
+	max-width: 640px;
 }
-
-.text-fa{
-	margin-top: 10px;
-	font-size: 20px;
-	opacity: 1;
-}
-
-.text-loja{
-	margin-top: 10px;
-	font-size: 20px;
-	opacity: 1;
-}
-
-
-
-.imagens_templete {
-	top: 350px;
-	width: 100px;
-	height: 900px;
-	width: 100%;
-	position: absolute;
-}
-
-.imagens {
-	overflow: hidden;
-	display: flex;
-    justify-content: center;
-	position:center;
-}
- 
 .imagem1{
+	float: left;
+	margin-left: 10px;
+	margin-top: 1px;
+}
+#coment1{
+	text-align: center;
+	opacity: 0;
+	font-size: 20px;
+	color: #000;
+	margin-left: 200px;
+	margin-top: -460px;
+}
+.imagem2 {
+	float: right;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+#coment2{
+	text-align: center;
+	opacity: 0;
+	font-size: 20px;
+	color: #000;
+	margin-left: 200px;
+	margin-top: -500px;
+}
+.imagem1:hover img{
+	transition-duration: 800ms;
+	filter: grayscale(100%);
 	opacity: 0.5;
-	padding: 3px;
 }
-
-.imagem2{
+.imagem1:hover #coment1{
+	margin-left: -35px;
+	font-size: 20px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	transition-duration: 900ms;
+	transform: scale(1.1);
+	opacity: 1;
+}
+.imagem2:hover img{
+	transition-duration: 800ms;
+	filter: grayscale(100%);
 	opacity: 0.5;
-	height: 100px;
-	padding: 3px;
 }
-.imagem1:hover{
-	cursor: pointer;
+.imagem2:hover #coment2{
+	margin-right: 150px;
+	font-size: 20px;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	transition-duration: 900ms;
+	transform: scale(1.1);
 	opacity: 1;
-	transform: scale(1.02);
-	transition-duration: 0.9s;
+}
+.footer {
+	background-color: rgb(0, 0, 0);
+	margin-top: 715px;
+	font-family: sans-serif;
+	height: 450px;
+	padding: 20px 10px;
+  }
+  .logo-footer	{					
+	margin-top: 30px;
+	margin-left: 50px;
+  }
+  .logo-footer img{
+	max-width: 120px;
+	margin-left: 20px;												
+  }
+  .logo-footer p{
+	  margin-left: -1108px;
+	  margin-top: 10px;
+	  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	  color: #fff;
+	  font-size: 18px;
+	  text-align: center;
+  }
+  .barra{
+	width: 700px;
+	margin-top: 20px;
+	background-color: #fff;
+	height: 3px;
+  }
+  .conteiner-footer{
+	  margin-left: 60px;
+  }
+  .produtos p{
+	color: #fff;
+	font-size: 18px;
+	margin-top: 30px;
+  }
+  .produtos a{
+	font-size: 15px;
+	margin-top: 10px;
+	color: rgb(167, 167, 167);
+	text-decoration: none;
+	display: flex;
+  }
+  .termos{
+	  margin-top: -189px;
+	  margin-left: 200px;
+  }
+  .termos p{
+	color: #fff;
+	font-size: 18px;
+	margin-top: 30px;
+  }
+  .termos a{
+	font-size: 15px;
+	margin-top: 10px;
+	color: rgb(167, 167, 167);
+	text-decoration: none;
+	display: flex;
+  }
+  .endereço{
+	margin-top: -189px;
+	margin-left: 150px;
+  }
+.endereço p{
+	color: #fff;
+	font-size: 20px;
+	margin-top: 85px;
+	margin-left: 350px;
+}
+.endereço a{
+	font-size: 15px;
+	margin-left: 350px;
+	margin-top: 10px;
+	color: rgb(167, 167, 167);
+	text-decoration: none;
+	display: flex;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-.imagem2:hover{
-	cursor: pointer;
-	opacity: 1;
-	transform: scale(1.02);
-	transition-duration: 0.9s;
+#submit {
+	max-height: 100px;
 }
 
+input[type=submit] {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  transition-duration: 400ms;
+  background-color: #45a049;
+}
+
+.container {
+  margin-right: 50px;
+  margin-top: -370px;
+  float: right;
+  max-height: 400px;
+  max-width: 400px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.barra-direitos{
+	margin-top: 50px;
+	height: 2px;
+	background-color: #fff;
+}
+.direitos p{
+	margin-top: 20px;
+	color: #fff;
+	font-size: 16px;
+	margin-left: -20px;
+	text-align: center;
+}
