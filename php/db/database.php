@@ -1,12 +1,18 @@
 <?php
+$servername = "127.0.0.1";
+$username = "root";
+$password = "";
+$dbname = "traktor-ecommerce";
+$db = new mysqli($servername, $username, $password, $dbname);
 
-$host = "localhost";
-$user = "root";
-$senha = "";
-$bd = "ecommerce_traktor";
-
-$mysqli = new mysqli($host, $user, $senha, $bd);
-
-if($mysqli->connect_errno)
-    echo "erro na conexão: (".$mysqli->connect_errno.") ".$mysqli->connect_errno;
+if (!$db) {
+    echo "Error: Falha ao conectar-se com o banco de dados MySQL." . PHP_EOL;
+    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
+    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+    exit;
+}
+ 
+echo "Sucesso ao conectar-se com a base de dados MySQL." . PHP_EOL;
+ 
+mysqli_close($db);
 ?>
