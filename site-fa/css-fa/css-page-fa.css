@@ -83,72 +83,37 @@ body,html{
 }
 /*fim Slider*/
 
+/*intagram feed*/
+
+.fotoInsta img{
+	margin-left: 550px;
+	margin-top: 280px;
+	max-width: 300px;
+}
+
 /* Container Produtos */
+
+#container-produto{
+	margin-top: 450px;
+}
 
 .imagem-produto img{
 	box-shadow: 5px 8px 10px #333;
+	float: left;
+	margin-top: 30px;
 	border-radius: 10px;
-	max-width: 500px;
-	margin-top: 300px;
-	margin-left: 820px;
+	max-width: 300px;
 }
 
-.barra-txt{
-	border-style: ridge;
-	border-color: rgb(192, 151, 37);
-	border-radius: 20px;
-	margin-top: -350px;
-	margin-left: 30px;
-	background-color: #fff;
-	max-width: 1200px;
-	height: 365px;
+.imagem-produto2 img{
+	box-shadow: 5px 8px 10px #333;
+	float: right;
+	margin-top: 30px;
+	border-radius: 10px;
+	max-width: 300px;
+	margin-right: 20px;
 }
 
-.icon-fa1{
-	display: flex;	
-}
-
-.icon-fa1 img{
-	margin-top: -10px;
-	margin-left: -8px;
-}
-
-.txt1{
-	font-weight: bolder;
-	font-size: 18px;
-	margin-top: 13px;
-	margin-left: 30px;
-	max-width: 600px;
-}
-
-.icon-fa2 img{
-	max-width: 60px;
-	margin-top: 20px;
-	margin-left: 8px;
-}
-
-.txt2{
-	font-weight: bolder;
-	font-size: 18px;
-	margin-top: -98px;
-	margin-left: 110px;
-	max-width: 600px;
-}
-
-.icon-fa3 img{
-	height: 70px;
-	margin-top: 70px;
-	margin-left: 2px;
-}
-
-.txt3{
-	font-weight: bolder;
-	font-size: 18px;
-	margin-top: -65px;
-	margin-left: 110px;
-	max-width: 600px;
-}
-/* Container Produtos */
 
 /* conteiner team */
 #conteiner-team {
@@ -160,153 +125,39 @@ body,html{
 	margin-left: 30px;
 	max-height: 70px;
 }
-/* container team */
 
-/* Container Produtos */
 
-#container-fan{
-	margin-left: 40px;
-}
-.imagem-fan img{
-	box-shadow: 5px 8px 10px #333;
-	border-radius: 10px;
-	max-width: 500px;
-	max-height: 400px;
-	margin-top: 50px;
-	margin-left: 900px;
-}
-
-.barra-txt-fan{
+.barra-txt{
 	border-style: ridge;
 	border-color: rgb(192, 151, 37);
 	border-radius: 20px;
 	margin-top: -350px;
-	margin-left: 30px;
+	margin-left: 80px;
 	background-color: #fff;
 	max-width: 1200px;
 	height: 365px;
 }
 
-.icon-fan1{
-	display: flex;	
-}
-
-.icon-fan1 img{
-	margin-top: -10px;
-	margin-left: -8px;
-}
-
-.txtfan1{
+.txt1{
+	
+	display: flex;
+	text-align: center;
 	font-weight: bolder;
 	font-size: 18px;
-	margin-top: 13px;
-	margin-left: 30px;
-	max-width: 600px;
-}
-
-.icon-fan2 img{
-	max-width: 60px;
-	margin-top: 20px;
-	margin-left: 8px;
-}
-
-.txtfan2{
-	font-weight: bolder;
-	font-size: 18px;
-	margin-top: -98px;
-	margin-left: 110px;
-	max-width: 600px;
-}
-
-.icon-fan3 img{
-	height: 70px;
-	margin-top: 70px;
-	margin-left: 2px;
-}
-
-.txtfan3{
-	font-weight: bolder;
-	font-size: 18px;
-	margin-top: -65px;
-	margin-left: 110px;
-	max-width: 600px;
-}
-
-
-/* Container Passeio */
-
-#container-passeio{
-	margin-left: 40px;
-}
-.imagem-passeio img{
-	box-shadow: 5px 8px 10px #333;
-	border-radius: 10px;
-	max-width: 500px;
-	max-height: 400px;
+	margin-left: 260px;
 	margin-top: 50px;
-	margin-left: 850px;
-}
-
-.barra-txt-passeio{
-	border-style: ridge;
-	border-color: rgb(192, 151, 37);
-	border-radius: 20px;
-	margin-top: -350px;
-	margin-left: 30px;
-	background-color: #fff;
-	max-width: 1200px;
-	height: 365px;
-}
-
-.icon-passeio1{
-	display: flex;	
-}
-
-.icon-passeio1 img{
-	margin-top: -10px;
-	margin-left: -8px;
-}
-
-.txtpasseio1{
-	font-weight: bolder;
-	font-size: 18px;
-	margin-top: 13px;
-	margin-left: 30px;
 	max-width: 600px;
 }
 
-.icon-passeio2 img{
-	max-width: 60px;
-	margin-top: 20px;
-	margin-left: 8px;
-}
 
-.txtpasseio2{
-	font-weight: bolder;
-	font-size: 18px;
-	margin-top: -98px;
-	margin-left: 110px;
-	max-width: 600px;
-}
 
-.icon-passeio3 img{
-	height: 70px;
-	margin-top: 70px;
-	margin-left: 2px;
-}
+/* Slider team */
 
-.txtpasseio3{
-	font-weight: bolder;
-	font-size: 18px;
-	margin-top: -65px;
-	margin-left: 110px;
-	max-width: 600px;
-}
 
 /* Fooster */
 .footer {
 	background-color: rgb(0, 0, 0);
-	margin-top: 50px;
+	margin-top: 500px;
 	font-family: sans-serif;
 	height: 570px;
 	padding: 20px 10px;
