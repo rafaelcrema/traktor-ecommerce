@@ -1,9 +1,9 @@
 <?php
-$servername = "127.0.0.1";
-$username = "root";
-$password = "";
-$dbname = "traktor-ecommerce";
-$db = new mysqli($servername, $username, $password, $dbname);
+$host = "127.0.0.1";
+$user = "root";
+$pass = "";
+$db = "traktor-ecommerce";
+$conecta = mysqli_connect($host, $user, $pass, $db) or print (mysqli_select_db($db,$conecta));
 
 if (!$db) {
     echo "Error: Falha ao conectar-se com o banco de dados MySQL." . PHP_EOL;
