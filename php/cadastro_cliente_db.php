@@ -1,6 +1,6 @@
 <?php 
 
-include_once("./conexao.php");
+include_once("conexao.php");
 
 $usuario = $_POST['usuario'];
 $email = $_POST['email'];
@@ -25,6 +25,7 @@ VALUES ('$usuario','$email','$nome_user','$sobrenome_user','$cpf','$rg','$numero
 
 $result_usuario = mysqli_query($conexao, $result_usuario);
 
+     
 if(mysqli_affected_rows($conexao) != 0){
     echo "<script>alert('Cadastro efetuado com Sucesso!);</script>";
     header('location: /traktor/pagina inicial/login_acess.php');
@@ -33,3 +34,4 @@ else{
     echo "<script>alert('Usuario não foi cadastrado com Sucesso!);</script>";
     header('location: /php/cadastrar.php');
 }
+

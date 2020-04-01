@@ -6,11 +6,16 @@
     <title>TRAKTOR</title>
 </head>
 <body>
+
     <div id="container_cadastro">
         <form action="cadastro_cliente_db.php" method="post">
         <div class="usuario_user">
-            <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+    <input type="text" name="usuario" id="usuario" placeholder="Usuario">
             <input type="email" name="email" class="email" placeholder="E-mail (Obrigatorio)">
+            <?php
+            echo "<script>('Login ou email já cadastrdo')</script>";
+            exit();
+            ?>
         </div>
         <div class="nome_user">
             <input type="text" name="nome_user" class="nome_user" placeholder="Primeiro Nome (obrigatorio)">
