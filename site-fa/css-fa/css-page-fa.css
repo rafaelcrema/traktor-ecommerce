@@ -159,12 +159,45 @@ body,html{
 /* Slider team */
 
 
+/* Seven Piece */
+
+#Container-calça{
+	margin-top: 80px;
+	display: flex;
+}
+
+.imagem_seven img{
+	max-width: 350px;
+	margin-left: 20px;
+}
+
+.text-seven p{
+	text-align: center;
+	font-size: 25px;
+	margin-top: -330px;
+	margin-left: 400px;
+	max-width: 700px;
+}
+
+.borda-seven{
+	border-style: ridge;
+	border-color: rgb(192, 151, 37);
+	border-radius: 20px;
+	margin-top: -230px;
+	margin-left: 100px;
+	background-color: #fff;
+	width: 1200px;
+	height: 365px;
+}
+
+
+
 /* Fooster */
 .footer {
 	background-color: rgb(0, 0, 0);
-	margin-top: 500px;
+	margin-top: 130px;
 	font-family: sans-serif;
-	height: 570px;
+	height: 550px;
 	padding: 20px 10px;
   }
   .logo-footer	{					
