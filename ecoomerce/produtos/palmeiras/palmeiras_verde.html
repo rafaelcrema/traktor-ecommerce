@@ -7,9 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../palmeiras/css_palmeiras.css">
-    <link rel="stylesheet" href="../ecoomerce/css-ecommerce/produtos.css"> <!--Css dos produtos-->
-    <link rel="stylesheet" href="css-ecommerce/css-ecomerce.css"> <!--Css da pagina ecommerce-->
-    <meta name="viewport" content="width=, initial-scale=1.0"> 
     <meta name="viewport" content="width=device-width, initial-scale=1">
  
  
@@ -68,8 +65,81 @@
     </div>
 
     <!--Escolher Tamanho e Sexo-->
-    <form action="carrinho.php" method="post">
+    <form action="add_carrinho.php" method="post" class="add-carrinho">
+        <table class="variacao" cellspacing="0">
+            <tbody>
+                <tr>
+                    <div class="label-sexo">
+                        <td class="label">
+                            <label for="sexo"><p>SEXO</p></label>
+                        </td>
+                    </div>
+                    <td class="value">
+                        <select id="sexo" class="" name="attribute_sexo" data-attribute_name="attribute_sexo" data-show_option_none="yes" data-default_value="">
+                            <option value="">Escolha uma opção</option>
+                            <option value="MASCULINO" class="attached enabled">MASCULINO</option>
+                            <option value="FEMININO" class="attached enabled">FEMININO</option>
+                        </select>  
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label for="tamanho">TAMANHO</label>
+                    </td>
+                    <td class="value">
+                        <select id="tamanho" class="" name="attribute_tamanho" data-attribute_name="attribute_tamanho" data-show_option_none="yes" data-default_value=""><option value="">Escolha uma opção</option>
+                            <option value="P" class="attached enabled">P</option>
+                            <option value="M" class="attached enabled">M</option>
+                            <option value="G" class="attached enabled">G</option>
+                            <option value="GG" class="attached enabled">GG</option>
+                            <option value="XG" class="attached enabled">XG</option>
+                            <option value="SUPER" class="attached enabled">SUPER</option>
+                        </select>
+                            <a class="reset_variations" href="#" style="visibility: hidden;">Limpar</a>
+                    </td>
+                </tr>
+            </tbody>
+            <div class="variacao_unica">
+                <script type="text/javascript">
+                    var x_de = 'x de';
+                    var dec_sep = '.';
+                    var th_sep = ',';
+                    var cur_symbol = '&#82;&#36;';
+                    var cur_pos = 'left';
+                    
+                    function formatMoney(cur_symbol, number, c, d, m, cur_pos){
+                        c = isNaN(c = Math.abs(c)) ? 2 : c, 
+                        d = d == undefined ? "." : d, 
+                        m = m == undefined ? "," : m, 
+                        s = number < 0 ? "-" : "", 
+                        i = parseInt(number = Math.abs(+number || 0).toFixed(c)) + "", 
+                        j = (j = i.length) > 3 ? j % 3 : 0,
+                        cur_pos = cur_pos == "" ? "left" : cur_pos;
 
+                        if(cur_pos == 'left'){
+                            return cur_symbol + s + (j ? i.substr(0, j) + m : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + m) + (c ? d + Math.abs(number - i).toFixed(c).slice(2) : "");
+                        }
+                        else if(cur_pos == 'left_space'){
+                            return cur_symbol + '&nbsp;' + s + (j ? i.substr(0, j) + m : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + m) + (c ? d + Math.abs(number - i).toFixed(c).slice(2) : "");
+                        }
+                        else if(cur_pos == 'right'){
+                            return s + (j ? i.substr(0, j) + m : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + m) + (c ? d + Math.abs(number - i).toFixed(c).slice(2) : "") + cur_symbol;
+                        }
+                        else if(cur_pos == 'right_space'){
+                            return s + (j ? i.substr(0, j) + m : "") + i.substr(j).replace(/(\d{3})(?=\d)/g, "$1" + m) + (c ? d + Math.abs(number - i).toFixed(c).slice(2) : "") + '&nbsp;' + cur_symbol;
+                        }                
+                    };
+                </script>
+                <script type="text/javascript">
+                    var installment_prefix = '';
+                    var installment_qty = 6;
+                    var installment_suffix = '';
+                    var installment_minimum_value = 0;
+                </script>
+            </div>
+        </table>
+        <button type="submit" class="botao_comprar">COMPRAR</button>
     </form>
 </div>
     

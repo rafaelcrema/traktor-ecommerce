@@ -20,7 +20,7 @@
         <div class="header">
             <div class="links">
                 <a href="site-fa/index-fa.html">Futebol Americano</a>
-                <a href="#passeio">Passeio</a>
+                <a href="/traktor/pagina inicial/ecoomerce/ecommer.html">Passeio</a>
                 <a href="#colecao">Coleções</a>
             </div>
                 <div class="logo">      
@@ -45,7 +45,7 @@
                 <div id="coment1"><strong>Futebol Americano</strong><br>Para jogadores<br>para fãns do esporte</div>
             </div>
             <div class="imagem2">
-                <a href="https://traktor.com.br/" target="_blank" rel="noopener noreferrer">
+                <a href="/traktor/pagina inicial/ecoomerce/ecommer.html" target="_blank" rel="noopener noreferrer">
                     <img src="IMAGENS/modelos-loja2.png" alt="">
                 </a>
                 <div id="coment2"><strong>Street Wear</strong><br>O estilo do F. Americano<br>em roupas para o lazer</div>
