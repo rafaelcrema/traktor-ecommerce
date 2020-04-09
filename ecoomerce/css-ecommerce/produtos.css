@@ -18,13 +18,23 @@ body,html{
 
 .detalhe-produto1{
     margin-left: 30px;
-    border-style: groove;
+    border-style: none;
     border-radius: 20px;
-    box-shadow: 5px 8px 10px #666;
-    background-color: rgb(235, 235, 235);
+    box-shadow: 2px 2px 6px rgb(170, 170, 170);
+    background-color: rgb(240, 240, 240);
 	max-width: 300px;
 	height: auto;
 }
+.text-new p{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 15px;
+    border-style: none;
+    background-color: red;
+    height: 25px;
+    width: 90px;
+}
+
 .produto-1{
     margin-top: 30px;
 }
